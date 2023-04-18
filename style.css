@@ -655,10 +655,16 @@ a.read-more-btn:hover {
 
 @media only screen and (min-width: 1440px) {
     html {
-        font-size: 100%;
+        font-size: 150%;
     }
     
     
+}
+
+@media only screen and (max-width: 1439.99px) and (min-width: 1024px) {
+    html {
+        font-size: 120%;
+    }
 }
 
 @media only screen and (max-width: 991.99px) {
