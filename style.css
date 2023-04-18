@@ -657,6 +657,10 @@ a.read-more-btn:hover {
     html {
         font-size: 100%;
     }
+
+    .tablet-logo {
+        display: none;
+    }
     
     
 }
@@ -665,11 +669,19 @@ a.read-more-btn:hover {
     html {
         font-size: 90%;
     }
+
+    .tablet-logo {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 991.99px) {
     html {
         font-size: 90%;
+    }
+
+    .tablet-logo {
+        display: none;
     }
     
 }
