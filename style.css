@@ -650,7 +650,9 @@ a.read-more-btn:hover {
 /* media queries */
 
 @media only screen and (max-size: 1440px) and (min-size:1024px) {
-
+    html {
+        font-size: 100%;
+    }
     
 }
 
