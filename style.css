@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Raleway:wght@400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: all .2s linear;
+}
+
+:root {
+    --orange:#ffa500;
+}
+
+::selection {
+    background: var(--orange);
+    color: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p, span {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.header {
+    text-align: center;
+    
+}
+
+.navbar {
+    background: rgb(255, 255, 255);
+    padding: .5rem 0;
+}
+
+.navbar ul {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    padding: 0 .5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #0d075a;
+    font-weight: 700;
+
+}
+
+.navbar ul li a:hover {
+    color: var(--orange);
+}
+
+.navbar ul li a img {
+    width: 140px;
+    height: 50px;
+    padding: .5rem 1rem;
+}
+
+a.order-btn {
+    text-decoration: none;
+}
+
+.order-btn {
+    background: var(--orange);
+    padding: 1rem 1.5rem;
+    margin-left: 20px;
+    font-size: 1rem;
+    outline: none;
+    border-radius: .2rem;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.order-btn:hover {
+    background: #000;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 96vh;
+}
+
+.slider-wrapper {
+    height: 96vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+   
+}
+
+.content-one {
+    display: block;
+    height: 90vh;
+    background: url(img/banner-one.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    position: relative;  
+    
+}
+
+.banner-content {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    z-index: 999;
+}
+
+.banner-content img {
+    width: 20%;
+    align-items: center;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+}
+.content-two {
+    display: block;
+    height: 90vh;
+    background: url(img/banner-two.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    position: relative;   
+    
+}
+
+.content-three {
+    display: block;
+    height: 90vh;
+    background: url(img/banner-three.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    position: relative;  
+    
+}
+
+.content-four {
+    display: block;
+    height: 90vh;
+    background: url(img/banner-four.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    position: relative; 
+    
+}
+
+.content-five {
+    display: block;
+    height: 90vh;
+    background: url(img/banner-five.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    position: relative;  
+    
+}
+
+.pt {
+    padding-top: 30vh;
+}
+
+.content-one h2, 
+.content-two h2, 
+.content-three h2, 
+.content-four h2 , 
+.content-five h2 {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 20px;
+
+}
+
+.banner-content p {
+    font-family: 'Poppins', sans-serif;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d0e0e86;
+    z-index: 1;
+    padding-top: 30vh;
+}
+
+/* Product track form */
+
+.tracking-order {
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.track-order-form {
+    width: 60%;
+    background: #dad8d856;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px #dddddd85;
+    border: 2px solid #c5c4c42f;
+
+}
+.track-order-form h3 {
+    text-transform: uppercase;
+    width: 40%;
+    display: inline-block;
+    text-align: end;
+    font-size: 1.75rem;
+}
+.track-order-form span {
+    font-size: 1rem;
+    padding: .5rem 0;
+    display: inline-block;
+    width: 50%;
+    text-align: start;
+    padding-left: 20px;
+}
+.track-order-form form {
+    margin-top: 1rem;
+}
+.track-order-form form input {
+    border: 1px solid #e0dede;
+    padding: 1rem 1rem;
+    font-size: .8rem;
+    width: 25%;
+}
+
+.track-order-form form input[type="button"] {
+    background: var(--orange);
+    text-transform: uppercase;
+}
+
+.track-order-form form input[type="button"]:hover {
+    background: black;
+    color: #ffa500;
+}
+
+.service {
+    padding: 5rem 10%;
+    background: #dddddd71;
+}
+.service-top, .contact-top, .partner-top, .investor-top {
+    display: block;
+}
+.service-text, .contact-text, .partner-top, .application-top, .investor-top {
+    width: 60%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.service-text span, .contact-text span, .partner-top span, .application-top span, .investor-top span {
+    color: var(--orange);
+}
+.service-text h2, .contact-text h2, .partner-top h2, .application-top h2, .investor-top h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.service-text h3, .contact-text h3, .partner-top h3, .application-top h3, .investor-top h3 {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    right: 0;
+    font-size: 68px;
+    color: #dddddd85;
+    z-index: -1;
+    text-transform: uppercase;
+}
+.service-text p, .contact-text p, .partner-top p, .application-top p, .investor-top p {
+    color: #3d3d3d;
+    padding-bottom: .5rem;
+}
+.service .service-wrapper .service-img {
+    width: 48%;
+    text-align: end;
+}
+.service .service-wrapper .service-img img {
+    width: 90%;
+    overflow: hidden;
+    
+}
+
+.service-items {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+.service-items .our-services {
+    width: 31.33%;
+    margin-right: 2%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 3rem 1.5rem;
+    box-shadow: 5px 5px 5px #a7a6a64f;
+    border-radius: 3px;
+}
+
+.service-items .our-services:hover  {
+    box-shadow: 5px 5px 5px #ce740e4f;
+    margin-top: -30px;
+
+}
+.service-items .our-services span {
+    border: 1px solid #ffa500;
+
+    color: #131212;
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+}
+.service-items .our-services h3 {
+    padding: 1rem 0;
+}
+.service-items .our-services p {
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.service-items .our-services a {
+    text-decoration: none;
+}
+
+a.read-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--orange);
+    padding: .75rem 2rem;
+    border-radius: 3px;
+    color: #fff;
+
+}
+
+a.read-more-btn:hover {
+    background: #000;
+
+}
+
+/* Contact section design start */
+
+.contact-us {
+    background: rgba(128, 129, 129, 0.267);
+    padding: 4rem 10%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-wrapper {
+    display: inline-flex;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.contact-details {
+    width: 45%;
+    align-items: center;
+    margin: auto 0;
+}
+
+.contact-details h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.contact-details address {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.contact-details .phone {
+    margin-top: 30px;
+}
+.contact-details .phone a {
+    text-decoration: none;
+    display: block;
+    padding: .5rem 0;
+    color: #000000;
+}
+
+.contact-form {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    
+}
+
+
+.contact-form form input {
+    width: 90%;
+    display: block;
+    margin: 10px 0;
+    font-size: .9rem;
+    padding: .5rem .75rem;
+    color: #ddd;
+    border: 1px solid #ddd;
+}
+
+.contact-form form select {
+    width: 90%;
+    display: block;
+    margin: 10px 0;
+    font-size: .9rem;
+    padding: .5rem .75rem;
+    color: #313131;
+    border: 1px solid #ddd;
+}
+
+.contact-form form textarea {
+    width: 90%;
+    display: block;
+    margin: 10px 0;
+    font-size: .9rem;
+    padding: .5rem .75rem;
+    color: #313131;
+    border: 1px solid #ddd;
+}
+
+.contact-form form input[type="submit"] {
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 0;
+    display: block;
+}
+
+.contact-form form input[type="submit"]:hover {
+    background: #000;
+    cursor: pointer;
+}
+
+
+/* partner section start */
+
+
+
+.partner-section, .investor-section {
+    position: relative;
+    padding: 5rem 10%;
+}
+.partner-wrapper, .investor-wrapper {
+    padding: 25px 0;
+    padding-top: 40px;
+    display: inline-flex;
+    margin:0 auto;
+}
+
+.partner-form {
+    position: relative;
+    width: 43%;
+    margin-right: 5%;
+    padding: 35px 25px;
+    background: #000000;
+}
+.partner-form h3{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+.partner-form form{
+    width: 100%;
+    padding: 8px 0 0 0;
+}
+
+.partner-content {
+    width: 50%;
+}
+.partner-form form input {
+    width: 48%;
+    display: inline-block;
+    margin: 13px 0;
+    font-size: .9rem;
+    padding: .5rem .75rem;
+    color: #3d3d3d;
+    border: 1px solid #ddd;
+}
+.partner-form form input:focus {
+    background: #E8F0FE;
+}
+.partner-form form select {
+    width: 48%;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: .9rem;
+    padding: .5rem .75rem;
+    color: #313131;
+    border: 1px solid #ddd;
+}
+.partner-form form textarea {
+    width: 97%;
+    display: block;
+    margin: 10px 0;
+    font-size: .9rem;
+    padding: .5rem .75rem;
+    color: #313131;
+    border: 1px solid #ddd;
+}
+.partner-form form input[type="submit"] {
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 0;
+    display: block;
+    border: 1px solid #dddddd00;
+}
+.partner-form form input[type="submit"]:hover {
+    background: #ffffff;
+    cursor: pointer;
+    color: #000;
+}
+
+.partner-content, .investor-content {
+    margin: auto;
+}
+.partner-content h3, .investor-content h3 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.partner-content p, .investor-content p {
+    padding: 1rem 0;
+}
+.send-message {
+    text-decoration: none;
+    background: var(--orange);
+    padding: .75rem 1rem;
+    margin-top: 2rem;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+}
+
+.send-message:hover {
+    background: #000;
+    
+}
+
+.application {
+    padding: 5rem 10%;
+    background: #ddd;
+}
+
+.application-wrapper {
+    margin-top: 3rem;
+    display: flex;
+}
+.application-wrapper .application-img {
+    width: 50%;
+}
+.application-wrapper .application-img img {
+    width: 90%;
+}
+.application-wrapper .application-content {
+    width: 50%;
+}
+.application-wrapper .application-content h3 {
+    font-size: 2rem;
+}
+.application-wrapper .application-content p {
+    color: #333232;
+    padding: .5rem 0;
+}
+
+.application-wrapper .application-content ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+.application-wrapper .application-content ul li {
+    padding: .3rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: poppins;
+}
+.application-wrapper .application-content .app-icon {
+    display: inline-flex;
+    margin-top: 2rem;
+}
+.application-wrapper .application-content .app-icon a {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.application-wrapper .application-content .app-icon a img {
+    width: 10rem;
+}
+
+/* Investors section start */
+
+.investor-section {
+    padding: 5rem 10%;
+    background: #dddddd8a;
+}
+
+.investor-wrapper {
+    display: inline-flex;
+}
+
+.investor-content {
+    width: 45%;
+}
+
+.investor-img {
+    width: 50%;
+}
+
+.investor-img img {
+    width: 90%;
+}
+
+/* media queries */
+
+@media only screen and (max-size: 1440px) and (min-size:1024px) {
+
+    
+}
+
+@media only screen and (max-size: 991.99px) {
+    html {
+        font-size: 60%;
+    }
+    
+}
+
+@media only screen and (max-size: 767.99px) {
+    html {
+        font-size: 55%;
+    }
+    
+}
+
+@media only screen and (max-size: 575.99px) {
+    html {
+        font-size: 52%;
+    }
+    
+}
+
