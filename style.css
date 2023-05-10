@@ -581,7 +581,7 @@ a.read-more-btn:hover {
 }
 
 .application {
-    padding: 5rem 10%;
+    padding: 5rem 10% 0 10%;
     background: #fff;
 }
 
@@ -649,6 +649,26 @@ a.read-more-btn:hover {
 
 .investor-img img {
     width: 90%;
+}
+
+/* Footer section design */
+
+.footer {
+    width: 100%;
+    background: #000;
+    padding: 10px 10%;
+    text-align: center;
+}
+
+.footer p {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: bold;
 }
 
 /* media queries */
