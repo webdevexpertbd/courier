@@ -693,6 +693,10 @@ a.read-more-btn:hover {
     .tablet-logo {
         display: none;
     }
+
+    .banner-content h2 {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 991.99px) {
@@ -702,6 +706,10 @@ a.read-more-btn:hover {
 
     .tablet-logo {
         display: none;
+    }
+
+    .banner-content h2 {
+        width: 90%;
     }
     
 }
@@ -732,6 +740,10 @@ a.read-more-btn:hover {
         display: block;
         width: 100%;
         padding: .5rem 0;
+    }
+
+    .banner-content h2 {
+        width: 96%;
     }
     
 }
