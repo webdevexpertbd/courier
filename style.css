@@ -731,7 +731,8 @@ a.read-more-btn:hover {
 
     .partner-form {
         position: relative;
-        width: 90%;
+        width: 100%;
+        display: block;
     }
     
 }
