@@ -487,7 +487,7 @@ a.read-more-btn:hover {
     padding: 25px 0;
     padding-top: 40px;
     display: inline-flex;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .partner-form {
@@ -711,6 +711,28 @@ a.read-more-btn:hover {
     .banner-content h2 {
         width: 90%;
     }
+
+    .track-order-form h3 {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .track-order-form span {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .track-order-form form input {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    .partner-form {
+        position: relative;
+        width: 90%;
+    }
     
 }
 
@@ -744,6 +766,31 @@ a.read-more-btn:hover {
 
     .banner-content h2 {
         width: 96%;
+    }
+
+    .track-order-form h3 {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .track-order-form span {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .track-order-form form input {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .service-items {
+        display: block;
+        width: 80%;
+    }
+
+    .service-items .our-services {
+        width: 90%;
     }
     
 }
